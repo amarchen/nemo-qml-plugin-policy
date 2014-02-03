@@ -1,3 +1,7 @@
+This is a fork of original nemomobile policy for putting the library to a given dir instead of a system one.
+For all sane usage reasons you should be using the original library.
+
+
 The org.nemomobile.policy QML plugin provides an API for communicating with the
 libresource policy manager.
 
