@@ -1,5 +1,5 @@
 TARGET = nemopolicy
-PLUGIN_IMPORT_PATH = org/nemomobile/policy
+PLUGIN_IMPORT_PATH = harbour/flashlight/org/nemomobile/policy
 
 TEMPLATE = lib
 CONFIG += qt plugin hide_symbols link_pkgconfig
@@ -10,7 +10,7 @@ equals(QT_MAJOR_VERSION, 5){
 }
 
 equals(QT_MAJOR_VERSION, 4): target.path = $$[QT_INSTALL_IMPORTS]/$$PLUGIN_IMPORT_PATH
-equals(QT_MAJOR_VERSION, 5): target.path = $$[QT_INSTALL_QML]/$$PLUGIN_IMPORT_PATH
+equals(QT_MAJOR_VERSION, 5): target.path = /usr/share/harbour-flashlight/lib/$$PLUGIN_IMPORT_PATH
 INSTALLS += target
 
 qmldir.files += $$_PRO_FILE_PWD_/qmldir

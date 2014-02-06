@@ -1,2 +1,2 @@
-module org.nemomobile.policy
+module harbour.flashlight.org.nemomobile.policy
 plugin nemopolicy
