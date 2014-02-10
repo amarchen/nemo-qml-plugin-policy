@@ -1,6 +1,16 @@
 This is a fork of original nemomobile policy for putting the library to a given dir instead of a system one.
-For all sane usage reasons you should be using the original library.
+That is for satisfying Jolla Harbour rules.
+For most of sane usage reasons you should be using the original library.
 
+If you want to use the library in your project, check comments in src.pro
+
+You'll need to define a PROJECT_SHORTNAME variable in your .yaml and still patch qmldir manually
+
+Pull requests for automating qmldir change are very welcome.
+
+
+----------
+original readme:
 
 The org.nemomobile.policy QML plugin provides an API for communicating with the
 libresource policy manager.

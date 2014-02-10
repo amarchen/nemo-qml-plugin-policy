@@ -50,16 +50,16 @@ class PolicyPlugin : public QDeclarativeExtensionPlugin
 {
     Q_OBJECT
 #if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
-    Q_PLUGIN_METADATA(IID "harbour.flashlight.org.nemomobile.policy")
+    Q_PLUGIN_METADATA(IID "FULL_PLUGIN_PATH")
 #endif
 public:
     void initializeEngine(QDeclarativeEngine *engine, const char *uri) {
-        Q_ASSERT(QLatin1String(uri) == QLatin1String("harbour.flashlight.org.nemomobile.policy"));
+        Q_ASSERT(QLatin1String(uri) == QLatin1String(FULL_PLUGIN_PATH));
     }
 
     virtual void registerTypes(const char *uri)
     {
-        Q_ASSERT(QLatin1String(uri) == QLatin1String("harbour.flashlight.org.nemomobile.policy"));
+        Q_ASSERT(QLatin1String(uri) == QLatin1String(FULL_PLUGIN_PATH));
         qmlRegisterType<Resource>(uri, 1, 0, "Resource");
         qmlRegisterType<Permissions>(uri, 1, 0, "Permissions");
     }
